@@ -11,3 +11,12 @@ Add the following fields to user table migrattion
 Php artisan migrate
 
 Now cutomize its login screen register and home page
+
+Now if we php artisan route:list we notice that login get route is going to AUthenticationSessionController store method so customize it 
+
+as the the default login page is auth folder so we will create a page Admin_Auth.blade.php
+
+and we will copy all the assets and other requirment even dashboard design to public folder and link its css and js to this Admin_Auth.blade.php then we will extend
+its login dashboard and other register page
+
+DO it by yourself get help from php artisan route:list

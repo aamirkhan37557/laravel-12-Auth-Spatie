@@ -76,6 +76,16 @@ name="email" :value="old('email')"
 
 NOw your are aredy to go no you need to just change the dashboard after login
 
+Logout Button 
+
+inlcude this 
+href="{{ route('logout') }}"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
+and this 
+
+<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+    @csrf
+</form>
+
 
 
 

@@ -27,3 +27,30 @@ its login dashboard and other register page  Better to copy all the css and js f
 DO it by yourself get help from php artisan route:list
 
 now customize the login design click on login page and there customize it 
+
+login Page 
+ @extends('auth.Admin_App')
+       @section('content')
+
+ <form method="POST" action="{{ route('login') }}">
+        @csrf
+Also note the name field for email and passwrod and error must be same 
+
+name="email" :value="old('email')"
+ @if ($errors->has('email'))    <span class="text-danger mt-2">
+                                      {{ $errors->first('email') }}
+                                       </span>
+           @endif
+
+
+ name="password" autocomplete="current-password" 
+
+                   @if ($errors->has('password'))    <span class="text-danger mt-2">
+                                      {{ $errors->first('password') }}
+                                       </span>
+           @endif
+
+
+</form>
+@endsection
+

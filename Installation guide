@@ -1,0 +1,13 @@
+this will install laravel breeze and auth login etc
+
+php artisan breeze:install
+
+Add the following fields to user table migrattion
+
+ $table->string('photo')->nullable();
+            $table->string('role')->default('user');
+            $table->string('status')->default('1'); 
+
+Php artisan migrate
+
+Now cutomize its login screen register and home page

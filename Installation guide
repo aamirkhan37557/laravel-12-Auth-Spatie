@@ -17,6 +17,13 @@ Now if we php artisan route:list we notice that login get route is going to AUth
 as the the default login page is auth folder so we will create a page Admin_Auth.blade.php
 
 and we will copy all the assets and other requirment even dashboard design to public folder and link its css and js to this Admin_Auth.blade.php then we will extend
-its login dashboard and other register page
+its login dashboard and other register page  Better to copy all the css and js from dashboard index page  
+
+ <link href="{{asset('assets/css/app.min.css')}}" rel="stylesheet" type="text/css" id="app-style" />
+
+   <script src="{{asset('assets/js/app.js')}}"></script>
+
 
 DO it by yourself get help from php artisan route:list
+
+now customize the login design click on login page and there customize it 

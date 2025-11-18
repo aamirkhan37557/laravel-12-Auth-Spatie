@@ -54,3 +54,29 @@ name="email" :value="old('email')"
 </form>
 @endsection
 
+
+Now we will make The register Page
+
+@extends(auth.Admin_App)
+@section('content')
+    <form method="POST" action="{{ route('register') }}">
+        @csrf
+
+input fields  and do for error by your self from the login page copy paste just change the name 
+name="name" :value="old('name')"
+
+name="email" :value="old('email')"
+
+ name="password"
+
+ name="password_confirmation" 
+
+@endsection
+
+
+NOw your are aredy to go no you need to just change the dashboard after login
+
+
+
+
+
